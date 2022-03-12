@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content />
+        <meta name="author" content />
+        <title>Cryptocurrency Tracker</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            .btn {
+              border-radius: 4px;
+              background-color: #20e619;
+              border: none;
+              color: #FFFFFF;
+              text-align: center;
+              font-size: 28px;
+              padding: 20px;
+              width: 200px;
+              transition: all 0.5s;
+              cursor: pointer;
+              margin: 5px;
+            }
+            
+            .btn span {
+              cursor: pointer;
+              display: inline-block;
+              position: relative;
+              transition: 0.5s;
+            }
+            
+            .btn span:after {
+              content: '\00bb';
+              position: absolute;
+              opacity: 0;
+              top: 0;
+              right: -20px;
+              transition: 0.5s;
+            }
+            
+            .button:hover span {
+              padding-right: 25px;
+            }
+            
+            .button:hover span:after {
+              opacity: 1;
+              right: 0;
+            }
+
+            </style>
+    </head>
+    <body class="d-flex flex-column">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html">Cryptocurrency Tracker</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page content-->
+            <section class="py-5">
+                <div class="container px-5">
+                    <!-- Contact form-->
+                    <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
+                        <div class="text-center mb-5">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+                            <h1 class="fw-bolder">Your Feedback!!</h1>
+                            <p class="lead fw-normal text-muted mb-0">We'd love to hear from you</p>
+                        </div>
+                        <div class="row gx-5 justify-content-center">
+                            <div class="col-lg-8 col-xl-6">
+                           
+                              
+                                <form id="contactForm" style="overflow-x:auto;" >
+                                    
+
+                                    <!-- Name input-->
+                                
+                                    <p>
+                                        <label style="overflow-x:auto;">Full Name:</label>
+                                        <input type="text" name="name" placeholder="Enter your name..." id="name" style="width : 500px ;  " required style="overflow-x:auto;">
+                                      </p>
+                                
+                                      <p>
+                                        <label style="overflow-x:auto;">Email Address:</label>
+                                        <input type="text" name="email" id="email" placeholder="name@example.com" style="width : 500px"  required style="overflow-x:auto;">
+                                      </p>
+                                      <p>
+                                        <label style="overflow-x:auto;">Phone Number:</label>
+                                        <input type="text" name="phone" placeholder="Phone Number.."  style="width : 500px" id="phone" style="overflow-x:auto;">
+                                      </p>
+                                      <p class="full">
+                                        <label style="overflow-x:auto;">Feedback Message:</label>
+                                        <textarea name="message" rows="5" placeholder="Enter your message here..." style="width : 500px" id="message" style="overflow-x:auto;"></textarea>
+                                      </p>
+                                    <!-- Submit success message-->
+                                    <!---->
+                                    <!-- This is what your users will see when the form-->
+                                    <!-- has successfully submitted-->
+                        
+                                    <!-- Submit Button-->
+                                    <button class="btn btn-primary"  type="submit" onclick=" manage()" id="submitBt">Submit</button>
+
+                                    <p>
+                                        
+                                            <div class="alert" style="border: 0px; background-color: rgb(33, 240, 33); padding-left: 2%;text-align: center; display: none;">
+                                                <h4 class="alert-heading">Thank You!! <span style='font-size:50px;'>&#128077;</span></h4>
+                                                <p>We appreciate your valuable feedback !!</p>
+                                                <hr>
+                                                
+                                              </div>
+                                        
+                                        </p>
+                                      
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </section>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+          <div class="container px-5">
+              <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                  <div class="col-auto">
+                      <div class="small m-0 text-white">Copyright &copy; Cryptocurrency Tracker 2022</div>
+                  </div>
+                
+              </div>
+          </div>
+      </footer>
+        <!-- Core theme JS-->
+    
+
+   
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+        <script src="js/scripts.js"></script>
+       
+    </body>
+</html>
